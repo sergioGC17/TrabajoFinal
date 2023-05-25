@@ -1,12 +1,13 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: 1px solid red;
+    1Sborder: 1px solid red;
 }
 header{
     position: absolute;
-    width: 98%;
-    margin: 1%;
+    width: 100%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.077);
 }
     .menu_grande{
         display: flex;
@@ -15,7 +16,7 @@ header{
         .menu-izq{
             display: flex;
             justify-content: left;
-            width: 48%;
+            width: 46%;
         }
             .menu-izq li{
                 margin-right: 20px;
@@ -34,7 +35,7 @@ header{
         .menu-drcha{
             display: flex;
             justify-content: right;
-            width: 48%;
+            width: 45%;
         }
             li{
                 display: flex;
@@ -54,28 +55,70 @@ header{
 .container-index{
     height: 100%;
     width: 100%;
+    position: relative;
 }
-    .inicio > .container-texto{
+    .inicio > .container-info{
         width: 100%;
         position: absolute;
         color: white;
-        height: 20%;
+        height: 30%;
         display: flex;
         margin-top: 35%;
         justify-content: center;
         align-items: center;
+        bottom: 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.359);
+        box-sizing: border-box;
     }
-        .container-texto  .container-boton{
+        .container-info .titulo, .container-info .parrafo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+            .container-info .titulo{
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .container-info .parrafo{
+                font-size: 20px;
+            }
+        .container-info  .container-boton{
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 30px;
         }
-        .container-texto  button{
-        }
+            .container-info .saberMas{
+                margin-left: 15px;
+                border-radius: 50px;
+                background-color: transparent;
+                border: 2.5px solid white;
+                color: white;
+                cursor: pointer;
+                transition: border-color 0.3s;
+                transition-timing-function: steps(4);
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .container-info .saberMas:hover{
+                    border-color: red;
+                }
+                .saberMas > img{
+                    width: 60%;
+                }
+
     .imagen-inicio{
         height: 100%;
+        position: relative;
+        z-index: -1;
     }
         .imagen-inicio > img{
             height: 100%;
             width: 100%;
+            object-fit: cover;
         }
