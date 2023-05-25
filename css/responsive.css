@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    .menu_grande{
+        display: none;
+    }
+    .menu_pequeno{
+        display: flex;
+    }
+    
+    
+    .container{
+        display: block;
+    }
+    .fondo{
+        width: 100%;
+    }
+}
