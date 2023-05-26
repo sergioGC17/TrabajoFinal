@@ -1,13 +1,14 @@
 *{
     margin: 0px;
     padding: 0px;
-    1Sborder: 1px solid red;
+    1border: 1px solid red;
 }
 header{
     position: absolute;
-    width: 100%;
+    width: 98%;
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.077);
+    z-index: 2;
 }
     .menu_grande{
         display: flex;
@@ -26,12 +27,26 @@ header{
             display: flex;
             justify-content: center;
         }
-            header a{
+            .logo a{
                 width: 50%;
             }
                 header img{
                     width: 100%;
+                    transition: opacity 0.3s ease;
                 }
+                    .logo img:last-child{
+                        display: none; 
+                    }
+                    .logo a:hover img:first-child{
+                        display: none;
+                    } 
+                    .logo a:hover img:last-child{
+                        display: block;
+                    }   
+                    .logo a:hover{
+                        cursor: pointer;
+                    }
+
         .menu-drcha{
             display: flex;
             justify-content: right;
@@ -90,13 +105,15 @@ header{
             justify-content: center;
             font-size: 30px;
         }
+            .container-info a{
+                color: white;
+                text-decoration: none;
+            }
             .container-info .saberMas{
                 margin-left: 15px;
                 border-radius: 50px;
                 background-color: transparent;
                 border: 2.5px solid white;
-                color: white;
-                cursor: pointer;
                 transition: border-color 0.3s;
                 transition-timing-function: steps(4);
                 width: 50px;
@@ -104,8 +121,9 @@ header{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                text-decoration: none;
             }
-                .container-info .saberMas:hover{
+                .container-info .saberMas:hover, .container-info a:hover ~ .saberMas{
                     border-color: red;
                 }
                 .saberMas > img{
@@ -122,3 +140,26 @@ header{
             width: 100%;
             object-fit: cover;
         }
+    
+   
+    .container-video {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .container-video video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .container-video .content {
+        position: relative;
+        z-index: 1;
+    }
+        
