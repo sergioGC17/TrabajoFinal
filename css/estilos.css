@@ -1,15 +1,17 @@
 *{
     margin: 0px;
     padding: 0px;
-    1border: 1px solid red;
+    2border: 1px solid red;
 }
 header{
     position: absolute;
     width: 98%;
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.077);
+    position: fixed;
     z-index: 2;
 }
+
     .menu_grande{
         display: flex;
         width: 100%;
@@ -86,7 +88,7 @@ header{
         background-color: rgba(0, 0, 0, 0.359);
         box-sizing: border-box;
     }
-        .container-info .titulo, .container-info .parrafo{
+        .container-info .titulo, .container-info .texto{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -96,7 +98,7 @@ header{
                 font-size: 40px;
                 font-weight: bold;
             }
-            .container-info .parrafo{
+            .container-info .texto{
                 font-size: 20px;
             }
         .container-info  .container-boton{
@@ -145,21 +147,92 @@ header{
     .container-video {
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 110%;
         overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
-    .container-video video {
-        position: absolute;
-        top: 0;
-        left: 0;
+        .container-video > video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    
+        .container-video > .container-texto {
+            position: relative;
+            height: 100%;
+            color: white;
+        }
+            .container-video .titulo, .container-video .texto, .container-video .boton{
+                display: flex;
+                justify-content: center;
+            }
+                .container-video .titulo{
+                    height: 13%;
+                    margin-bottom: 2%;
+                    align-items: flex-end;
+                    font-size: 35px;
+                }
+                .container-video .texto{
+                    height: 50%;
+                    font-size: 20px;
+                }
+                .container-video .boton{
+                    height: 45%;
+                    align-items: center;
+                    font-size: 27px;
+                }
+                    .boton>a{
+                        color: white;
+                        text-decoration: none;
+                        border: 2px solid white;
+                        padding: 2% 10%;
+                        border-radius: 5px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                        .boton>a::after {
+                            content: "";
+                            position: absolute;
+                            z-index: -1;
+                            left: 0;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            background: #00346d;
+                            transform: scale(0, 0);
+                            transition: all 0.3s ease;
+                        }
+                        .boton>a:hover::after {
+                            transition: all 0.3s ease-out;
+                            transform: scale(1, 1);
+                        }
+    .modelos{
         width: 100%;
-        height: 100%;
-        object-fit: cover;
     }
-    
-    .container-video .content {
-        position: relative;
-        z-index: 1;
-    }
-        
+        .modelosYyS, .modelos3yX{
+            display: flex;
+        }
+            .modeloY, .modeloS, .modelo3, .modeloX{
+                width: 100%;
+                overflow: hidden;
+                border: 0.5px solid black;
+            }
+                .modeloY, .modelo3{
+                    border-left: none;
+                }
+                .modeloS, .modeloX{
+                    border-right: none;
+                }
+                .modelos img{
+                    width: 100%;
+                    transition: transform 5s ease; 
+                }
+                    .modelos img:hover{
+                        transform: scale(1.2); 
+                    }

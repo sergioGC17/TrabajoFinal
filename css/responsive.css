@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .menu_grande{
         display: none;
     }
@@ -12,5 +12,9 @@
     }
     .fondo{
         width: 100%;
+    }
+
+    .modelosYyS, .modelos3yX{
+        display: block;
     }
 }
