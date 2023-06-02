@@ -1,343 +1,397 @@
 *{
     margin: 0px;
     padding: 0px;
-    1border: 1px solid red;
+    border: 1px solid red;
 }
-header{
-    position: absolute;
-    width: 98%;
-    padding: 1%;
-    background-color: rgb(29, 28, 28);
-    position: fixed;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.3s;
-    z-index: 2;
-}
-    .menu_grande{
-        display: flex;
-        width: 100%;
-    }
-        .menu_grande > ul{
-            display: flex;
-            justify-content: left;
-            width: 46%;
-        }
-            .menu_grande li{
-                margin-right: 20px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                list-style: none;
-                font-size: 20px;
-            }
-                .menu_grande a{
-                    color: white;
-                    text-decoration: none;
-                    width: 100%;
-                }
-        .logo{
-            width: 6%;
-            display: flex;
-            justify-content: center;
-        }
-            .logo a{
-                width: 50%;
-            }
-                header img{
-                    width: 100%;
-                    transition: opacity 0.3s ease;
-                }
-                    .logo img:last-child{
-                        display: none; 
-                    }
-                    .logo a:hover img:first-child{
-                        display: none;
-                    } 
-                    .logo a:hover img:last-child{
-                        display: block;
-                    }   
-                    .logo a:hover{
-                        cursor: pointer;
-                    }
-    
-    .menu_pequeño {
-        display: none;
-        width: 50px;
-        height: 50px;
-        margin-right: 3%;
-        background-image: url('../img/logoLetra.png');
-        border-radius: 5px;
-        background-color: rgba(29, 28, 28, 0.171);
-        background-size: cover;
-        cursor: pointer;
-    }
-        .menu_pequeño > .contenido {
-            display: none;
-            background-color: #403f3f;
-            width: 180px;
-            position: absolute;
-            height: 100vh;
-            margin-top: -2%;
-            margin-left: -130px;
-            padding: 1%;
-            animation: deplazarDerecha 1s;
-        }
-        
-            @keyframes deplazarDerecha {
-                0% {
-                    transform: translateX(100%);
-                }
-                
-            }
-            .menu_pequeño img{
-                margin-top: 20px;
-            }
-            .menu_pequeño li {
-                list-style: none;
-                height: 50px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 14px;
-                margin-top: 20px;
-                font-weight: bold;
-            }
-            .menu_pequeño li:hover {
-                background-color: #4d4d4d;
-                cursor: pointer;
-            }
-                .menu_pequeño  a{
-                    text-decoration: none;
-                    color: white;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-.container-index{
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-    .inicio > .container-info{
-        width: 100%;
+
+/* MENÚ */
+    header{
         position: absolute;
-        color: white;
-        height: 30%;
-        display: flex;
-        margin-top: 35%;
-        justify-content: center;
-        align-items: center;
-        bottom: 0;
-        padding: 20px;
-        background-color: rgba(0, 0, 0, 0.359);
-        box-sizing: border-box;
-    }
-        .container-info .titulo, .container-info .texto{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container-info .texto{
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
-            .container-info .titulo{
-                font-size: 40px;
-                font-weight: bold;
-            }
-            .container-info .texto{
-                font-size: 20px;
-            }
-        .container-info  .container-boton{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-        }
-            .container-info a{
-                color: white;
-                text-decoration: none;
-            }
-            .container-info .saberMas{
-                margin-left: 15px;
-                border-radius: 50px;
-                background-color: transparent;
-                border: 2.5px solid white;
-                transition: border-color 0.3s;
-                transition-timing-function: steps(4);
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                text-decoration: none;
-            }
-                .container-info .saberMas:hover, .container-info a:hover ~ .saberMas{
-                    border-color: red;
-                }
-                .saberMas > img{
-                    width: 60%;
-                }
-
-    .imagen-inicio{
-        height: 100%;
-        position: relative;
-        z-index: -1;
-    }
-        .imagen-inicio > img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-    
-   
-    .container-video {
-        position: relative;
+        width: 98%;
+        padding: 1%;
+        background-color: rgb(29, 28, 28);
+        position: fixed;
+        top: 0;
         width: 100%;
-        height: 110%;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        transition: top 0.3s;
+        z-index: 2;
     }
-    
-        .container-video > video {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .menu_grande{
+            display: flex;
             width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
-    
-        .container-video > .container-texto {
-            position: relative;
-            height: 100%;
-            color: white;
-        }
-            .container-video .titulo, .container-video .texto, .container-video .boton{
+            .menu_grande > ul{
                 display: flex;
-                justify-content: center;
+                justify-content: left;
+                width: 46%;
             }
-                .container-video .titulo{
-                    height: 13%;
-                    margin-bottom: 2%;
-                    align-items: flex-end;
-                    font-size: 35px;
-                }
-                .container-video .texto{
-                    height: 50%;
+                .menu_grande li{
+                    margin-right: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    list-style: none;
                     font-size: 20px;
                 }
-                .container-video .boton{
-                    height: 45%;
-                    align-items: center;
-                    font-size: 27px;
-                }
-                    .boton>a{
+                    .menu_grande .li2{
+                        font-weight: bold;
+                        border-radius: 10px;
+                        background-color: rgb(18, 17, 17);
+                        padding: 10px;
+                    }
+                    .menu_grande a{
                         color: white;
                         text-decoration: none;
-                        border: 2px solid white;
-                        padding: 2% 10%;
-                        border-radius: 5px;
-                        position: relative;
-                        z-index: 1;
+                        width: 100%;
                     }
-                        .boton>a::after {
-                            content: "";
-                            position: absolute;
-                            z-index: -1;
-                            left: 0;
-                            right: 0;
-                            top: 0;
-                            bottom: 0;
-                            background: #00346d;
-                            transform: scale(0, 0);
-                            transition: all 0.3s ease;
-                        }
-                        .boton>a:hover::after {
-                            transition: all 0.3s ease-out;
-                            transform: scale(1, 1);
-                        }
-    .modelos{
-        width: 100%;
-    }
-        .modelosYyS, .modelos3yX{
-            display: flex;
-        }
-            .modeloY, .modeloS, .modelo3, .modeloX{
-                width: 100%;
-                overflow: hidden;
-                border: 0.5px solid black;
-                box-sizing: border-box;
-                position: relative;
-                display: inline-block;
-                text-align: center;
+            .logo{
+                width: 6%;
+                display: flex;
+                justify-content: center;
             }
-                .modelos img{
-                    width: 100%;
-                    transition: transform 5s ease;
+                .logo a{
+                    width: 50%;
                 }
-                    .texto-modelos:hover~ img{
-                        transform: scale(1.2); 
+                    header img{
+                        width: 100%;
+                        transition: opacity 0.3s ease;
                     }
-                .texto-modelos {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 1;
+                        .logo img:last-child{
+                            display: none; 
+                        }
+                        .logo a:hover img:first-child{
+                            display: none;
+                        } 
+                        .logo a:hover img:last-child{
+                            display: block;
+                        }   
+                        .logo a:hover{
+                            cursor: pointer;
+                        }
+        
+        .menu_pequeño {
+            display: none;
+            width: 50px;
+            height: 50px;
+            margin-right: 3%;
+            background-image: url('../img/logos/logoLetra.png');
+            border-radius: 5px;
+            background-color: rgba(29, 28, 28, 0.171);
+            background-size: cover;
+            cursor: pointer;
+        }
+            .menu_pequeño > .contenido {
+                display: none;
+                background-color: #403f3f;
+                width: 180px;
+                position: absolute;
+                height: 100vh;
+                margin-top: -2%;
+                margin-left: -130px;
+                padding: 1%;
+                animation: deplazarDerecha 1s;
+            }
+            
+                @keyframes deplazarDerecha {
+                    0% {
+                        transform: translateX(100%);
+                    }
+                    
+                }
+                .menu_pequeño img{
+                    margin-top: 20px;
+                }
+                .menu_pequeño li {
+                    list-style: none;
+                    height: 50px;
                     display: flex;
                     justify-content: center;
-                    align-items: flex-end;
-                    font-size: 30px;
-                    text-decoration: none;
-                }            
-                    .texto-modelos .container-texto{
-                        width: 100%;
-                        height: 30%;
-                        color: white;
-                        background-color: rgba(0, 0, 0, 0.359);
+                    align-items: center;
+                    font-size: 14px;
+                    margin-top: 20px;
+                    font-weight: bold;
+                    border-radius: 10px;
+                }
+                    .menu_pequeño li:hover {
+                        background-color: #4d4d4d;
+                        cursor: pointer;
                     }
-                        .texto-modelos .texto{
-                            height: 40%;
-                            display: flex;
-                            align-items: flex-end;
-                            justify-content: center;
-                            font-weight: bold;
-                        }
-                        .texto-modelos .container-boton{
-                            height: 60%;
+                    .menu_pequeño .li2{
+                        background-color: #121212;
+                    }
+                        .menu_pequeño li a{
+                            text-decoration: none;
+                            color: white;
+                            width: 100%;
+                            height: 100%;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            font-size: 20px;
                         }
-                        .texto-modelos .titulo{
-                            padding: 10px;
+                        
+
+/* INDEX */
+    .container-index{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+        .inicio > .container-info{
+            width: 100%;
+            position: absolute;
+            color: white;
+            height: 30%;
+            display: flex;
+            margin-top: 35%;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.359);
+            box-sizing: border-box;
+        }
+            .container-info .titulo, .container-info .texto{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .container-info .texto{
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+                .container-info .titulo{
+                    font-size: 40px;
+                    font-weight: bold;
+                }
+                .container-info .texto{
+                    font-size: 20px;
+                }
+            .container-info  .container-boton{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+            }
+                .container-info a{
+                    color: white;
+                    text-decoration: none;
+                }
+                .container-info .saberMas{
+                    margin-left: 15px;
+                    border-radius: 50px;
+                    background-color: transparent;
+                    border: 2.5px solid white;
+                    transition: border-color 0.3s;
+                    transition-timing-function: steps(4);
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                }
+                    .container-info .saberMas:hover, .container-info a:hover ~ .saberMas{
+                        border-color: red;
+                    }
+                    .saberMas > img{
+                        width: 60%;
+                    }
+
+        .imagen-inicio{
+            height: 100%;
+            position: relative;
+            z-index: -1;
+        }
+            .imagen-inicio > img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        
+    
+        .container-video {
+            position: relative;
+            width: 100%;
+            height: 110%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+            .container-video > video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        
+            .container-video > .container-texto {
+                position: relative;
+                height: 100%;
+                color: white;
+            }
+                .container-video .titulo, .container-video .texto, .container-video .boton{
+                    display: flex;
+                    justify-content: center;
+                }
+                    .container-video .titulo{
+                        height: 13%;
+                        margin-bottom: 2%;
+                        align-items: flex-end;
+                        font-size: 35px;
+                    }
+                    .container-video .texto{
+                        height: 50%;
+                        font-size: 20px;
+                    }
+                    .container-video .boton{
+                        height: 45%;
+                        align-items: center;
+                        font-size: 27px;
+                    }
+                        .boton>a{
+                            color: white;
+                            text-decoration: none;
+                            border: 2px solid white;
+                            padding: 2% 10%;
+                            border-radius: 5px;
+                            position: relative;
+                            z-index: 1;
                         }
-                            .texto-modelos .saberMas{
-                                width: 35px;
-                                height: 35px;
-                                border-radius: 50px;
-                                background-color: transparent;
-                                border: 2px solid white;
-                                transition: border-color 0.3s;
-                                transition-timing-function: steps(4);
+                            .boton>a::after {
+                                content: "";
+                                position: absolute;
+                                z-index: -1;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background: #00346d;
+                                transform: scale(0, 0);
+                                transition: all 0.3s ease;
+                            }
+                            .boton>a:hover::after {
+                                transition: all 0.3s ease-out;
+                                transform: scale(1, 1);
+                            }
+        .modelos{
+            width: 100%;
+        }
+            .modelosYyS, .modelos3yX{
+                display: flex;
+            }
+                .modeloY, .modeloS, .modelo3, .modeloX{
+                    width: 100%;
+                    overflow: hidden;
+                    border: 0.5px solid black;
+                    box-sizing: border-box;
+                    position: relative;
+                    display: inline-block;
+                    text-align: center;
+                }
+                    .modelos img{
+                        width: 100%;
+                        transition: transform 5s ease;
+                    }
+                        .texto-modelos:hover~ img{
+                            transform: scale(1.2); 
+                        }
+                    .texto-modelos {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 1;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        font-size: 30px;
+                        text-decoration: none;
+                    }            
+                        .texto-modelos .container-texto{
+                            width: 100%;
+                            height: 30%;
+                            color: white;
+                            background-color: rgba(0, 0, 0, 0.359);
+                        }
+                            .texto-modelos .texto{
+                                height: 40%;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: center;
+                                font-weight: bold;
+                            }
+                            .texto-modelos .container-boton{
+                                height: 60%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
+                                font-size: 20px;
                             }
-                                .texto-modelos img{
-                                    width: 60%;
+                            .texto-modelos .titulo{
+                                padding: 10px;
+                            }
+                                .texto-modelos .saberMas{
+                                    width: 35px;
+                                    height: 35px;
+                                    border-radius: 50px;
+                                    background-color: transparent;
+                                    border: 2px solid white;
+                                    transition: border-color 0.3s;
+                                    transition-timing-function: steps(4);
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
                                 }
-                                
-                                .titulo:hover + .saberMas , .saberMas:hover  {
-                                    border-color: red;
-                                }
+                                    .texto-modelos img{
+                                        width: 60%;
+                                    }
                                     
-                                    
+                                    .titulo:hover + .saberMas , .saberMas:hover  {
+                                        border-color: red;
+                                    }
+
+/* MODELO S */
+.container-modeloS{
+    height: 200%;
+}
+    .container-carrusel{
+        width: 70%;
+        height: 100%;
+        position: fixed;
+
+    }
+        .logoLetras{
+            padding: 2%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+            .logoLetras > img{
+                height: 25px;
+            }
+        .carrusel{
+            margin-top: 5%;
+            margin-bottom: auto;
+            height: 100%;
+        }
+            .carrusel > img{
+                width: 100%;
+            }
+            .carrusel > .colores{
+                margin-top: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+    .container-modeloS > .container-texto{
+        width: 24%;
+        height: 100%;
+        margin-top: 6%;
+        padding: 2%;
+        margin-left: 71%;
+        border: 1px solid red;
+    }
