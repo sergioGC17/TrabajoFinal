@@ -38,7 +38,18 @@ window.onload = function () {
   const radioRojo = document.getElementById("rojo");
   const radioNegro = document.getElementById("negro");
   const radioBlanco = document.getElementById("blanco");
+  const radioAzul = document.getElementById("azul");
 
+  radioAzul.addEventListener("change", () => {
+    if (radioAzul.checked) {
+      imagenes[0] = "img/azul/compositor1.png";
+      imagenes[1] = "img/azul/compositor2.png";
+      imagenes[2] = "img/azul/compositor3.png";
+      imagenes[3] = "img/azul/compositor4.png";
+      fotoActual = 0;
+      cargarImagen();
+    }
+  });
   radioRojo.addEventListener("change", () => {
     if (radioRojo.checked) {
       imagenes[0] = "img/rojo/compositor1.png";

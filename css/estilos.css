@@ -419,7 +419,7 @@
                         border-radius: 20px;
                         padding: 10px;
                     }
-                    .colores-carrusel .container-rojo, .colores-carrusel .container-negro, .colores-carrusel .container-blanco{
+                    .colores-carrusel .container-azul, .colores-carrusel .container-rojo, .colores-carrusel .container-negro, .colores-carrusel .container-blanco{
                         width: 50px;
                         height: 50px;
                         border: 1px solid black;
@@ -427,14 +427,14 @@
                         border-radius: 50px;
                         box-shadow: 2px 2px rgba(0,0,0,0.5);
                     }
-                        .container-rojo, .container-negro, .container-blanco{
+                        .container-azul, .container-rojo, .container-negro, .container-blanco{
                             width: 40px;
                             height: 40px;
                         }
                             input[type="radio"]{
                                 display: none;
                             }
-                            .container-rojo > .circulo, .container-negro > .circulo, .container-blanco > .circulo{
+                            .container-azul > .circulo, .container-rojo > .circulo, .container-negro > .circulo, .container-blanco > .circulo{
                                 width: 100%;
                                 height: 100%;
                                 justify-content: center;
@@ -454,6 +454,9 @@
                                 }
                                 .container-blanco > .circulo{
                                     background-color: #d4dad8;
+                                }
+                                .container-azul > .circulo{
+                                    background-color: #002374;
                                 }
                                     .circulo:hover{
                                         box-shadow: 0 0.5em 0.5em -0.4em;
