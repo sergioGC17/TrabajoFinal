@@ -39,19 +39,106 @@
         </div>
     </header>
     <div class="container-modeloS">
-        <div class="container-carrusel">
-            <div class="logoLetras">
-                <img src="../img/logos/logoLetras.png" alt="">
-            </div>
-            <div class="carrusel">
-                <img src="../img/modeloS/rojo/compositor.png" alt="">
-                <div class="colores">r g b</div>
+        <div class="container">
+            <div class="fixed">
+                <div class="logoLetras">
+                    <img src="../img/logos/logoLetras.png" alt="">
+                </div>
+                <div class="container-carrusel">
+                    <div class="carrusel">
+                        <button id="anterior" class="botonCarrusel"><</button>
+                        <div id="imagen"></div>
+                        <button id="siguiente" class="botonCarrusel">></button>
+                    </div>
+                    <div class="colores-carrusel">
+                        <div class="borde-colores">
+                        <label class="container-rojo">
+                            <input type="radio" name="color" value="rojo" class="rojo" id="rojo" checked> 
+                            <div class="circulo"></div>
+                        </label>
+                        <label class="container-negro">
+                            <input type="radio" name="color" value="negro" class="negro" id="negro"> 
+                            <div class="circulo"></div>
+                        </label>
+                        <label class="container-blanco">
+                            <input type="radio" name="color" value="blanco" class="blanco" id="blanco"> 
+                            <div class="circulo"></div>
+                        </label>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-texto">
-            texto
+        <div class="container2">
+            <div class="container-texto">
+                <div class="titulo">Modelo S</div>
+                <div class="info">
+                    <div class="columna">
+                        <div class="subtitulo">600km</div>
+                        <div class="parrafo">Autonomía  (WLTP)</div>
+                    </div>
+                    <div class="columna">
+                        <div class="subtitulo">322km/h</div>
+                        <div class="parrafo">Velocidad máxima</div>
+                    </div>
+                    <div class="columna">
+                        <div class="subtitulo">2,1s</div>
+                        <div class="parrafo">0-100 km/h</div>
+                    </div>
+                </div>
+                <div class="caracteristicas_clave">
+                    <div class="subtitulo">Características clave</div>
+                    <ul>
+                        <li>Interior en negro y blanco Premium con decoración de fibra de carbono</li>
+                        <li>Volante Yoke</li>
+                        <li>Capacidad de conducción autónoma total</li>
+                        <li>Prueba de conectividad premium de 1 año</li>
+                    </ul>
+                </div>
+                <div class="conduccion">
+                    <div class="subtitulo">Capacidad de conducción autónoma total</div>
+                    <ul>
+                        <li>Todas las funcionalidades del Piloto automático básico y Piloto automático mejorado</li>
+                        <li>Control de semáforos y señales de stop</li>
+                    </ul>
+                </div>
+                <div class="caracteristicas">
+                    <div class="subtitulo">Características</div>
+                    <div class="parrafo">
+                        Las funciones actuales necesitan una supervisión activa por 
+                        parte del conductor y no convierten al coche en autónomo. 
+                        Algunas de las funciones requieren el uso de los intermitentes 
+                        y tienen un ámbito limitado. La activación y el uso de estas 
+                        características sin supervisión dependerá de la posibilidad 
+                        de conseguir una fiabilidad superior de los conductores humanos, 
+                        tal como han demostrado miles de millones de kilómetros de 
+                        experiencia. También depende de la aprobación legislativa, lo 
+                        que puede llevar más tiempo en algunas jurisdicciones. A medida 
+                        que vayan evolucionando estas características de conducción 
+                        automática, su coche se actualizará continuamente mediante 
+                        actualizaciones de software inalámbricas.
+                    </div>
+                </div>
+                <div class="garantia">
+                    <div class="subtitulo">Garantía</div>
+                    <div class="parrafo">
+                        <div class="negrita">Garantía limitada</div>
+                        4 años/80.000 kilómetros totales
+                        <div class="negrita">Garantía limitada de la batería y la unidad de tracción</div>
+                        8 años/240.000 kilómetros totales
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
+        
     <script src="../js/script.js"></script>
+    <script>
+        const imagenes = [];
+        imagenes[0] = `img/rojo/compositor1.png`;
+        imagenes[1] = `img/rojo/compositor2.png`;
+        imagenes[2] = `img/rojo/compositor3.png`;
+        imagenes[3] = `img/rojo/compositor4.png`;
+      </script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: 1px solid red;
 }
 
 /* MENÚ */
@@ -149,6 +148,7 @@
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.359);
             box-sizing: border-box;
+            text-align: center;
         }
             .container-info .titulo, .container-info .texto{
                 display: flex;
@@ -354,16 +354,21 @@
                                         border-color: red;
                                     }
 
+
+*{  1border: 1px solid red;}
+
 /* MODELO S */
 .container-modeloS{
-    height: 200%;
+    border-top: 1px solid white;
+    display: flex;
 }
-    .container-carrusel{
-        width: 70%;
+    .container{
+        width: 60%;
         height: 100%;
-        position: fixed;
-
     }
+        .fixed{
+            position: fixed;
+        }
         .logoLetras{
             padding: 2%;
             height: 50px;
@@ -373,25 +378,196 @@
             .logoLetras > img{
                 height: 25px;
             }
-        .carrusel{
-            margin-top: 5%;
-            margin-bottom: auto;
-            height: 100%;
-        }
-            .carrusel > img{
-                width: 100%;
-            }
-            .carrusel > .colores{
+            .container-carrusel{
+                width: 800px;
+                margin: 0 auto;
                 margin-top: 5%;
+            }
+                .carrusel {
+                    display: flex;
+                    width: 100%;
+                    height: 388px;
+                }
+                    #imagen {
+                        width: 100%;
+                        background-size: cover;
+                    }
+                    .botonCarrusel{
+                        width: 55px;
+                        height: 50px;
+                        margin-top: auto;
+                        margin-bottom: auto;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        font-size: 20px;
+                        border-radius: 30px;
+                        cursor: pointer;
+                        border-color: white;
+                    }
+                        .botonCarrusel:hover{
+                            border-color: rgb(171, 167, 167);
+                            background-color: rgb(171, 167, 167);
+                            color: rgb(221, 220, 220);
+                        }
+                .colores-carrusel, .borde-colores{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                    .borde-colores{
+                        border: 1px solid black;
+                        border-radius: 20px;
+                        padding: 10px;
+                    }
+                    .colores-carrusel .container-rojo, .colores-carrusel .container-negro, .colores-carrusel .container-blanco{
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid black;
+                        margin: 30px;
+                        border-radius: 50px;
+                        box-shadow: 2px 2px rgba(0,0,0,0.5);
+                    }
+                        .container-rojo, .container-negro, .container-blanco{
+                            width: 40px;
+                            height: 40px;
+                        }
+                            input[type="radio"]{
+                                display: none;
+                            }
+                            .container-rojo > .circulo, .container-negro > .circulo, .container-blanco > .circulo{
+                                width: 100%;
+                                height: 100%;
+                                justify-content: center;
+                                align-items: center;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border: 1px solid #000000;
+                                border-radius: 25px;
+                                cursor: pointer;
+                            } 
+                                .container-rojo > .circulo{
+                                    background-color: #b90000;
+                                }
+                                .container-negro > .circulo{
+                                    background-color: #111111;
+                                }
+                                .container-blanco > .circulo{
+                                    background-color: #d4dad8;
+                                }
+                                    .circulo:hover{
+                                        box-shadow: 0 0.5em 0.5em -0.4em;
+                                        transform: translateY(-0.25em);
+                                        transform: translateY(-0.25em);
+                                    }
+                                    .colores-carrusel input[type="radio"]:checked + .circulo{
+                                        border: 2px solid #032e49;
+                                        box-shadow: 0 12px 16px 0 #000000, 0 17px 50px 0 #000000;
+                                    }
+    .container2{
+        width: 40%;
+        margin-top: 6%;
+    }
+    .container-modeloS .container-texto{
+        width: 60%;
+        padding: 2%;
+        border: 2px solid black;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+        .container-modeloS .container-texto > .titulo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        .container-modeloS .info{
+            display: flex;
+            justify-content: center;
+        }
+            .info .columna{
+                margin-left: 5px;
+                margin-right: 5px;
+                width: 30%;
+                height: 100%;
+            }
+            .container-modeloS .info .subtitulo{
+                font-size: 23px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-bottom: 2px;
+                font-weight: bold;
             }
-    .container-modeloS > .container-texto{
-        width: 24%;
-        height: 100%;
-        margin-top: 6%;
-        padding: 2%;
-        margin-left: 71%;
-        border: 1px solid red;
-    }
+            .container-modeloS .info .parrafo{
+                text-align: center;
+            }
+        .caracteristicas_clave{
+            margin-top: 80px;
+        }
+            .caracteristicas_clave .subtitulo{
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .caracteristicas_clave ul{
+                padding-left: 20px;
+                font-size: 17px;
+            }
+                .caracteristicas_clave li{
+                    margin-top: 12px;
+                }
+        .conduccion{
+            margin-top: 80px;
+        }
+            .conduccion .subtitulo{
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .conduccion ul{
+                padding-left: 20px;
+                font-size: 17px;
+            }
+                .conduccion li{
+                    margin-top: 12px;
+                }
+        .caracteristicas{
+            margin-top: 80px;
+        }
+            .caracteristicas .subtitulo{
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .caracteristicas .parrafo{
+                padding-left: 20px;
+                font-size: 17px;
+            }
+        .garantia{
+            margin-top: 80px;
+        }
+            .garantia .subtitulo{
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .garantia .parrafo{
+                font-size: 17px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+                .garantia .negrita{
+                    margin-top: 20px;
+                    font-weight: bold;
+                    font-size: 19px;
+                }
+
+
+                
