@@ -13,9 +13,9 @@
         <div class="menu_grande">
             <ul>
                 <li><a href="../modelY/modelY.html">Model Y</a></li>
-                <li class="li2"><a href="#">Model S</a></li>
+                <li><a href="../modelS/modelS.html">Model S</a></li>
                 <li><a href="../model3/model3.html">Model 3</a></li>
-                <li><a href="../modelX/modelX.html">Model X</a></li>
+                <li class="li2"><a href="#">Model X</a></li>
                 <li><a href="">Powerwall</a></li>
                 <li><a href="">Carga</a></li>
             </ul>
@@ -30,9 +30,9 @@
             <ul class="contenido">
                 <a href="../../index.html"><img src="../../img/logos/logoLetras.png" alt=""></a>
                 <li><a href="../modelY/modelY.html">Model Y</a></li>
-                <li class="li2"><a href="#">Model S</a></li>
+                <li><a href="../modelS/modelS.html">Model S</a></li>
                 <li><a href="../model3/model3.html">Model 3</a></li>
-                <li><a href="../modelX/modelX.html">Model X</a></li>
+                <li class="li2"><a href="#">Model X</a></li>
                 <li><a href="">Powerwall</a></li>
                 <li><a href="">Carga</a></li>
             </ul>
@@ -52,20 +52,26 @@
                     </div>
                     <div class="colores-carrusel">
                         <div class="borde-colores">
-                            <label class="container-rojo">
-                                <input type="radio" name="color" value="rojo" class="rojo" id="rojo" checked> 
+                            <label class="container-negro">
+                                <input type="radio" name="color" value="negro" class="negro" id="negro" checked> 
                                 <div class="circulo"></div>
                             </label>
-                            <label class="container-negro">
-                                <input type="radio" name="color" value="negro" class="negro" id="negro"> 
+                            <label class="container-rojo">
+                                <input type="radio" name="color" value="rojo" class="rojo" id="rojo"> 
                                 <div class="circulo"></div>
                             </label>
                             <label class="container-blanco">
                                 <input type="radio" name="color" value="blanco" class="blanco" id="blanco"> 
                                 <div class="circulo"></div>
                             </label>
-                            <input type="radio" id="azul">
-                            <input type="radio" id="gris">
+                            <label class="container-azul">
+                                <input type="radio" name="color" value="azul" class="azul" id="azul"> 
+                                <div class="circulo"></div>
+                            </label>
+                            <label class="container-gris">
+                                <input type="radio" name="color" value="gris" class="gris" id="gris"> 
+                                <div class="circulo"></div>
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -73,27 +79,30 @@
         </div>
         <div class="container2">
             <div class="container-texto">
-                <div class="titulo">Modelo S</div>
+                <div class="titulo">Modelo X</div>
                 <div class="info">
                     <div class="columna">
-                        <div class="subtitulo">600km</div>
+                        <div class="subtitulo">576km</div>
                         <div class="parrafo">Autonomía  (WLTP)</div>
                     </div>
                     <div class="columna">
-                        <div class="subtitulo">322km/h</div>
+                        <div class="subtitulo">250km/h</div>
                         <div class="parrafo">Velocidad máxima</div>
                     </div>
                     <div class="columna">
-                        <div class="subtitulo">2,1s</div>
+                        <div class="subtitulo">3,9s</div>
                         <div class="parrafo">0-100 km/h</div>
                     </div>
                 </div>
                 <div class="caracteristicas_clave">
                     <div class="subtitulo">Características clave</div>
                     <ul>
-                        <li>Interior en negro y blanco Premium con decoración de fibra de carbono</li>
+                        <li>Llantas Turbine de 22"</li>
+                        <li>Interior negro premium con decoración de ébano</li>
                         <li>Volante Yoke</li>
-                        <li>Capacidad de conducción autónoma total</li>
+                        <li>Piloto automático</li>
+                        <li>Interior de cinco asientos</li>
+                        <li>Paquete de remolque</li>
                         <li>Prueba de conectividad premium de 1 año</li>
                     </ul>
                 </div>
@@ -107,18 +116,17 @@
                 <div class="caracteristicas">
                     <div class="subtitulo">Características</div>
                     <div class="parrafo">
-                        Las funciones actuales necesitan una supervisión activa por 
-                        parte del conductor y no convierten al coche en autónomo. 
-                        Algunas de las funciones requieren el uso de los intermitentes 
-                        y tienen un ámbito limitado. La activación y el uso de estas 
-                        características sin supervisión dependerá de la posibilidad 
-                        de conseguir una fiabilidad superior de los conductores humanos, 
-                        tal como han demostrado miles de millones de kilómetros de 
-                        experiencia. También depende de la aprobación legislativa, lo 
-                        que puede llevar más tiempo en algunas jurisdicciones. A medida 
-                        que vayan evolucionando estas características de conducción 
-                        automática, su coche se actualizará continuamente mediante 
-                        actualizaciones de software inalámbricas.
+                        Las funciones actuales necesitan una supervisión activa por parte del 
+                        conductor y no convierten al coche en autónomo. Algunas de las funciones 
+                        requieren el uso de los intermitentes y tienen un ámbito limitado. La 
+                        activación y el uso de estas características sin supervisión dependerá 
+                        de la posibilidad de conseguir una fiabilidad superior de los conductores
+                        humanos, tal como han demostrado miles de millones de kilómetros de 
+                        experiencia. También depende de la aprobación legislativa, lo que puede 
+                        llevar más tiempo en algunas jurisdicciones. A medida que vayan 
+                        evolucionando estas características de conducción automática, su coche 
+                        se actualizará continuamente mediante actualizaciones de software 
+                        inalámbricas.
                     </div>
                 </div>
                 <div class="garantia">
@@ -137,10 +145,10 @@
     <script src="../../js/script.js"></script>
     <script>
         const imagenes = [];
-        imagenes[0] = `img/rojo/compositor1.png`;
-        imagenes[1] = `img/rojo/compositor2.png`;
-        imagenes[2] = `img/rojo/compositor3.png`;
-        imagenes[3] = `img/rojo/compositor4.png`;
+        imagenes[0] = `img/negro/compositor1.png`;
+        imagenes[1] = `img/negro/compositor2.png`;
+        imagenes[2] = `img/negro/compositor3.png`;
+        imagenes[3] = `img/negro/compositor4.png`;
       </script>
 </body>
 </html>
