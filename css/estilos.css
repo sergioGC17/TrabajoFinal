@@ -359,10 +359,8 @@
                                     }
 
 
-*{  1border: 1px solid red;}
-
-/* MODELO S */
-.container-modeloS{
+/* MODELO S, MODELO 3, MODELO Y, MODELO X  */
+.container-modeloS, .container-modelo3, .container-modeloX, .container-modeloy{
     border-top: 1px solid white;
     display: flex;
 }
@@ -378,6 +376,7 @@
             height: 50px;
             display: flex;
             align-items: center;
+            cursor: pointer;
         }
             .logoLetras > img{
                 height: 25px;
@@ -478,14 +477,14 @@
         width: 40%;
         margin-top: 6%;
     }
-    .container-modeloS .container-texto{
+    .container-modeloS .container-texto, .container-modelo3 .container-texto, .container-modeloY .container-texto, .container-modeloX .container-texto{
         width: 60%;
         padding: 2%;
         border: 2px solid black;
         border-radius: 20px;
         margin: 0 auto;
     }
-        .container-modeloS .container-texto > .titulo{
+        .container-modeloS .container-texto > .titulo, .container-modelo3 .container-texto > .titulo, .container-modeloX .container-texto > .titulo, .container-modeloY .container-texto > .titulo, .container-modeloX .container-texto > .titulo{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -493,7 +492,7 @@
             margin-bottom: 25px;
             font-weight: bold;
         }
-        .container-modeloS .info{
+        .container-modeloS .info, .container-modelo3 .info, .container-modeloS .info, .container-modeloY .info, .container-modeloX .info{
             display: flex;
             justify-content: center;
         }
@@ -503,7 +502,7 @@
                 width: 30%;
                 height: 100%;
             }
-            .container-modeloS .info .subtitulo{
+            .container-modeloS .info .subtitulo, .container-modelo3 .info .subtitulo, .container-modeloX .info .subtitulo, .container-modeloY .info .subtitulo{
                 font-size: 23px;
                 display: flex;
                 align-items: center;
@@ -511,7 +510,7 @@
                 margin-bottom: 2px;
                 font-weight: bold;
             }
-            .container-modeloS .info .parrafo{
+            .container-modeloS .info .parrafo, .container-modelo3 .info .parrafo, .container-modeloY .info .parrafo, .container-modeloX .info .parrafo{
                 text-align: center;
             }
         .caracteristicas_clave{
