@@ -21,9 +21,8 @@
     }
     
     
-    .container{
-        display: block;
-    }
+    
+
     .fondo{
         width: 100%;
     }
@@ -31,10 +30,26 @@
     .modelosYyS, .modelos3yX{
         display: block;
     }
+    .container{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .container2{
+        margin-top: 10%;
+        margin-left: 0;
+        width: 100%;
+    }
+        .container-modeloS .container-texto, .container-modelo3 .container-texto, .container-modeloY .container-texto, .container-modeloX .container-texto{
+            width: 70%;
+        }
 }
 
 @media (max-width: 620px) {
     .container-index .titulo{
         font-size: 200%;
     }
+    
+        
 }
