@@ -22,7 +22,7 @@
             .menu_grande > ul{
                 display: flex;
                 justify-content: left;
-                width: 50%;
+                width: 45%;
             }
                 .menu_grande li{
                     margin-right: 10px;
@@ -238,7 +238,7 @@
                 height: 100%;
                 color: white;
             }
-                .container-video .titulo, .container-video .texto, .container-video .boton{
+                .container-video .titulo{
                     display: flex;
                     justify-content: center;
                 }
@@ -248,40 +248,6 @@
                         align-items: flex-end;
                         font-size: 35px;
                     }
-                    .container-video .texto{
-                        height: 50%;
-                        font-size: 20px;
-                    }
-                    .container-video .boton{
-                        height: 45%;
-                        align-items: center;
-                        font-size: 27px;
-                    }
-                        .boton>a{
-                            color: white;
-                            text-decoration: none;
-                            border: 2px solid white;
-                            padding: 2% 10%;
-                            border-radius: 5px;
-                            position: relative;
-                            z-index: 1;
-                        }
-                            .boton>a::after {
-                                content: "";
-                                position: absolute;
-                                z-index: -1;
-                                left: 0;
-                                right: 0;
-                                top: 0;
-                                bottom: 0;
-                                background: #00346d;
-                                transform: scale(0, 0);
-                                transition: all 0.3s ease;
-                            }
-                            .boton>a:hover::after {
-                                transition: all 0.3s ease-out;
-                                transform: scale(1, 1);
-                            }
         .modelos{
             width: 100%;
         }
@@ -486,11 +452,12 @@
             margin-top: 6%;
         }
             .container-modeloS .container-texto, .container-modelo3 .container-texto, .container-modeloY .container-texto, .container-modeloX .container-texto{
-                width: 90%;
+                width: 80%;
                 padding: 2%;
                 border: 2px solid black;
                 border-radius: 20px;
                 margin: 0 auto;
+                padding: 5%;
             }
                 .container-modeloS .container-texto > .titulo, .container-modelo3 .container-texto > .titulo, .container-modeloX .container-texto > .titulo, .container-modeloY .container-texto > .titulo, .container-modeloX .container-texto > .titulo{
                     display: flex;
@@ -677,6 +644,3 @@
                     font-weight: bold;
                     font-size: 19px;
                 }
-
-
-                

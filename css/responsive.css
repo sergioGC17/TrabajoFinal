@@ -20,8 +20,6 @@
         display: none;
     }
     
-    
-    
 
     .fondo{
         width: 100%;
@@ -49,7 +47,5 @@
 @media (max-width: 620px) {
     .container-index .titulo{
         font-size: 200%;
-    }
-    
-        
+    }        
 }
