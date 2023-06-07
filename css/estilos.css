@@ -1,6 +1,12 @@
-*{
-    margin: 0px;
-    padding: 0px;
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../fonts/LibreBaskerville-Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* MENÚ */
@@ -644,3 +650,21 @@
                     font-weight: bold;
                     font-size: 19px;
                 }
+
+
+
+
+
+footer{
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+    footer a{
+        margin-left: 30px;
+        color: white;
+        text-decoration: none;
+    }
