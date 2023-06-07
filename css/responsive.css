@@ -19,7 +19,19 @@
     .container-info .texto{
         display: none;
     }
-    
+
+    .botonCarrusel{
+        position: absolute;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+        #siguiente{
+            margin-left: 90%;
+            margin-right: 10%;
+        }
+        .carrusel{
+            width: 100%;
+        }
 
     .fondo{
         width: 100%;
